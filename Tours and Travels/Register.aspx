@@ -43,7 +43,7 @@
 
                          <h5>  <asp:Label ID="Label2" runat="server" Text="Mobile Number"></asp:Label></h5>
                         <div class="form-group">
-                            <asp:TextBox ID="TextBox2" runat="server" placeholder="Mobile Number" TextMode="Number"></asp:TextBox>       
+                            <asp:TextBox ID="TextBox2" runat="server" placeholder="Mobile Number" TextMode="Phone" MaxLength="10"></asp:TextBox>       
                        
                             </div>
 

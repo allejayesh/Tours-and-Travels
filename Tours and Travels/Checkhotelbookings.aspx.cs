@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace Tours_and_Travels
 {
-    public partial class BookingDetail : System.Web.UI.Page
+    public partial class Checkhotelbookings : System.Web.UI.Page
     {
-        
         string conn = ConfigurationManager.ConnectionStrings["newtat"].ConnectionString;
         SqlConnection con;
         protected void Page_Load(object sender, EventArgs e)
@@ -53,14 +53,7 @@ namespace Tours_and_Travels
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 sda.Fill(ds);
-                if (ds.Tables[0].Rows.Count != 0)
-                {
-                    DataTable dt = new DataTable();
-                    sda.Fill(dt);
-                    GridView1.DataSource = dt;
-                    GridView1.DataBind();
-
-                }
+                
                 if (ds.Tables[1].Rows.Count != 0)
                 {
 

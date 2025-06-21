@@ -71,11 +71,14 @@
     <Content Include="BookHotel.aspx" />
     <Content Include="Booking.aspx" />
     <Content Include="BookingDetail.aspx" />
+    <Content Include="Checkhotelbookings.aspx" />
+    <Content Include="Checkpackagebookings.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="Hotel Management.aspx" />
     <Content Include="Hotel.aspx" />
+    <Content Include="HotelPayment.aspx" />
     <Content Include="images\5-stars.png" />
     <Content Include="images\ADL.jpg" />
     <Content Include="images\admin.png" />
@@ -86,11 +89,13 @@
     <Content Include="images\camera.jpg" />
     <Content Include="images\cameraone.jpg" />
     <Content Include="images\camtwo.jpg" />
-    <Content Include="images\europe.jpg" />
     <Content Include="images\go.jpg" />
+    <Content Include="images\goa.jpg" />
     <Content Include="images\greenshade.jpg" />
     <Content Include="images\hiking.png" />
     <Content Include="images\him.jpg" />
+    <Content Include="images\kashmir.jpg" />
+    <Content Include="images\kerala.jpg" />
     <Content Include="images\loginimg.jpg" />
     <Content Include="images\japan.jpg" />
     <Content Include="images\ladakh.jpg" />
@@ -99,11 +104,14 @@
     <Content Include="images\navigation.png" />
     <Content Include="images\PackM.jpg" />
     <Content Include="images\plane.png" />
+    <Content Include="images\rajasthan.jpg" />
     <Content Include="images\rbg.jpg" />
     <Content Include="images\register.jpg" />
+    <Content Include="images\qrcode.jpeg" />
     <Content Include="LoginPage.aspx" />
     <Content Include="Packages.aspx" />
     <Content Include="PackagesManagement.aspx" />
+    <Content Include="Payment.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\jquery.js" />
     <Content Include="ViewDetails.aspx" />
@@ -141,6 +149,20 @@
     <Compile Include="BookingDetail.aspx.designer.cs">
       <DependentUpon>BookingDetail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Checkhotelbookings.aspx.cs">
+      <DependentUpon>Checkhotelbookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkhotelbookings.aspx.designer.cs">
+      <DependentUpon>Checkhotelbookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Checkpackagebookings.aspx.cs">
+      <DependentUpon>Checkpackagebookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkpackagebookings.aspx.designer.cs">
+      <DependentUpon>Checkpackagebookings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -172,6 +194,13 @@
     <Compile Include="Hotel.aspx.designer.cs">
       <DependentUpon>Hotel.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HotelPayment.aspx.cs">
+      <DependentUpon>HotelPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotelPayment.aspx.designer.cs">
+      <DependentUpon>HotelPayment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -192,6 +221,13 @@
     </Compile>
     <Compile Include="PackagesManagement.aspx.designer.cs">
       <DependentUpon>PackagesManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
@@ -224,6 +260,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\ooty.jpg" />
+    <Content Include="images\meg.jpg" />
     <None Include="packages.config" />
     <Content Include="TravelWorld.Master" />
     <None Include="Web.Debug.config">

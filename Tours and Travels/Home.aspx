@@ -50,6 +50,23 @@
      width:100%
      
      }
+/*#support-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+}*/
+.chat-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: dodgerblue; /* optional: adjust color */
+}
+
+
+
+
     </style>
    </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -60,6 +77,7 @@
            <h4>"Pack your bags, say goodbye to routine."</h4>
        </div>
     </div>
+
     <div class="container-fluid my-5">
         <h4 class="text-center mb-3" >What's your this year travel bucketlist?</h4>
         <hr / class="w-25 m-auto " style="color:darkblue; height:5px;">
@@ -67,68 +85,68 @@
             <div class="owl-carousel owl-theme">
     <div class="item mb-2 ">
         <div class="card border-0 shadow">
-            <img src="images/europe.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
+            <img src="images/kerala.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
             <div class="card-body">
-   <asp:Label ID="Label1" runat="server" Text="Europe"></asp:Label>
+   <asp:Label ID="Label1" runat="server" Text="Kerala"></asp:Label>
         <asp:Label ID="Label2" runat="server" Text="32000" Visible="False"></asp:Label>
              
-                <h5><asp:LinkButton ID="EuropeDetails" runat="server" OnClick="EuropeDetails_Click">Book Now</asp:LinkButton></h5>
+               <!-- <h5><asp:LinkButton ID="EuropeDetails" runat="server" OnClick="EuropeDetails_Click">Book Now</asp:LinkButton></h5> -->
             </div>
         </div>
     </div>
     <!--iten ends here-->
                  <div class="item mb-2 ">
         <div class="card border-0 shadow">
-           <img src="images/maldives.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
+           <img src="images/goa.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
             <div class="card-body">
-                  <asp:Label ID="Label3" runat="server" Text="Maldives"></asp:Label>
+                  <asp:Label ID="Label3" runat="server" Text="Goa"></asp:Label>
                             <asp:Label ID="Label4" runat="server" Text="16000" Visible="False"></asp:Label>
              
-               <h5><asp:LinkButton ID="MaldivesDetails" runat="server" OnClick="MaldivesDetails_Click">Book Now</asp:LinkButton></h5> 
+              <!-- <h5><asp:LinkButton ID="MaldivesDetails" runat="server" OnClick="MaldivesDetails_Click">Book Now</asp:LinkButton></h5> -->
             </div>
         </div>
     </div>
     <!--iten ends here-->
                  <div class="item mb-2 ">
         <div class="card border-0 shadow">
-            <img src="images/japan.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
+            <img src="images/ooty.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
             <div class="card-body">
-          <asp:Label ID="Label5" runat="server" Text="Japan"></asp:Label>
+          <asp:Label ID="Label5" runat="server" Text="Ooty"></asp:Label>
                             <asp:Label ID="Label6" runat="server" Text="16000" Visible="False"></asp:Label>
-               <h5><asp:LinkButton ID="JapanDetails" runat="server" OnClick="JapanDetails_Click">Book Now</asp:LinkButton></h5> 
+             <!--  <h5><asp:LinkButton ID="JapanDetails" runat="server" OnClick="JapanDetails_Click">Book Now</asp:LinkButton></h5>  -->
             </div>
         </div>
     </div>
     <!--iten ends here-->
                  <div class="item mb-2 ">
         <div class="card border-0 shadow">
-            <img src="images/him.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
+            <img src="images/kashmir.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
             <div class="card-body">
-               <asp:Label ID="Label7" runat="server" Text="Himachal Pradesh"></asp:Label>
+               <asp:Label ID="Label7" runat="server" Text="Kashmir"></asp:Label>
                             <asp:Label ID="Label8" runat="server" Text="16000" Visible="False"></asp:Label>
-             <h5> <asp:LinkButton ID="HPDetails" runat="server" OnClick="HimachalDetails_Click">Book Now</asp:LinkButton></h5>  
+          <!--   <h5> <asp:LinkButton ID="HPDetails" runat="server" OnClick="HimachalDetails_Click">Book Now</asp:LinkButton></h5>  -->
             </div>
         </div>
     </div>
     <!--iten ends here-->
                  <div class="item mb-2 ">
         <div class="card border-0 shadow">
-            <img src="images/ladakh.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
+            <img src="images/rajasthan.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
             <div class="card-body">
-               <asp:Label ID="Label9" runat="server" Text="Ladakh"></asp:Label>
+               <asp:Label ID="Label9" runat="server" Text="Rajasthan"></asp:Label>
                             <asp:Label ID="Label10" runat="server" Text="16000" Visible="False"></asp:Label>
-                <h5>   <asp:LinkButton ID="LadakhDetails" runat="server" OnClick="LadakhDetails_Click">Book Now</asp:LinkButton></h5>
+         <!--       <h5>   <asp:LinkButton ID="LadakhDetails" runat="server" OnClick="LadakhDetails_Click">Book Now</asp:LinkButton></h5> -->
             </div>
         </div>
     </div>
     <!--iten ends here-->
                                  <div class="item mb-2 ">
         <div class="card border-0 shadow">
-            <img src="images/korea.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
+            <img src="images/meg.jpg" alt="image" class="card-img-top" width="200px" height="250px"/>
             <div class="card-body">
-                   <asp:Label ID="Label11" runat="server" Text="Korea"></asp:Label>
+                   <asp:Label ID="Label11" runat="server" Text="Meghalaya"></asp:Label>
                             <asp:Label ID="Label12" runat="server" Text="16000" Visible="False"></asp:Label>
-              <h5> <asp:LinkButton ID="ViewMore" runat="server" OnClick="ViewMore_Click">Book Now</asp:LinkButton></h5> 
+           <!--   <h5> <asp:LinkButton ID="ViewMore" runat="server" OnClick="ViewMore_Click">Book Now</asp:LinkButton></h5>  -->
             </div>
         </div>
     </div>
@@ -146,9 +164,7 @@
                 <img src="images/5-stars.png" width="80px" height="70px"/>
                 <h3>affordable hotels</h3>
                 <p>
-                    vhgug gguhu gguiu fyr fgi ggjjg hvhgug gguhu gguiu 
-                    
-                </p>
+                    5star hotels</p>
             </div>
             <div class="box" >
                 <img src="images/balanced-diet.png"width="80px" height="70px"/>
@@ -170,9 +186,9 @@
             <div class="row">
             <div class="box" >
                 <img src="images/navigation.png" width="80px" height="70px"/>
-                <h3>around the world</h3>
+                <h3>India tour</h3>
                 <p>
-                    world tour
+                    Experience Beautiful places
                   
                 </p>
             </div>
@@ -195,6 +211,16 @@
                 </div>
         </div>
     </section>
+
+
    <!--services end-->
         </div>
+    <!-- Floating Support Button -->
+<div id="support-chat">
+    <a href="https://wa.me/919826472625" target="_blank" title="Chat with us on WhatsApp">       
+        <p class="chat-text">Customer Support</p>
+    </a>
+</div>
+
+
 </asp:Content>

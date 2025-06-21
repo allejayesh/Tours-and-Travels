@@ -61,13 +61,21 @@ namespace Tours_and_Travels
             Label lblAmt = (Label)row.FindControl("lblAmt");
             Image img = (Image)row.FindControl("Image1");
 
+            Label lbldate = (Label)row.FindControl("lblDate");
             //Response.Redirect("ViewDetails.aspx?Place="+lblPlace.Text+"&Description="+lblDesc.Text+"&Days="+lblDays.Text+"&Amount="+lblAmount);
             Session["Place"] = lblPlace.Text;
             Session["Desc"] = lblDesc.Text;  
             Session["Day"] = lblDays.Text;
             Session["Amt"] = lblAmt.Text;
             Session["img"] = img.ImageUrl.ToString();
-            
+            if (lbldate != null && DateTime.TryParse(lbldate.Text, out DateTime parsedDate))
+            {
+                Session["date"] = parsedDate.ToString("dd-MM-yyyy");
+            }
+            else
+            {
+                Session["date"] = "";
+            }
             Response.Redirect("ViewDetails.aspx");
 
             /*GridView gridView = (GridView)sender;

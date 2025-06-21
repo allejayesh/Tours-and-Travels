@@ -11,7 +11,7 @@ namespace Tours_and_Travels
 {
 
 
-    public partial class Packages
+    public partial class Checkpackagebookings
     {
 
         /// <summary>

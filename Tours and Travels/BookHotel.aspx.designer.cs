@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tours_and_Travels {
-    
-    
-    public partial class BookHotel {
-        
+namespace Tours_and_Travels
+{
+
+
+    public partial class BookHotel
+    {
+
         /// <summary>
         /// Label1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
+
         /// <summary>
         /// TextBox1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
+
         /// <summary>
         /// Label2 control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-        
+
         /// <summary>
         /// TextBox2 control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox2;
-        
+
         /// <summary>
         /// Label3 control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-        
+
         /// <summary>
         /// TextBox3 control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
-        
+
         /// <summary>
         /// Label4 control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label4;
-        
+
         /// <summary>
         /// TextBox5 control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
-        
+
         /// <summary>
         /// Label5 control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
-        
+
         /// <summary>
         /// TextBox6 control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox6;
-        
+
         /// <summary>
         /// Label7 control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label7;
-        
+
         /// <summary>
         /// TextBox7 control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox7;
-        
+
         /// <summary>
         /// Label8 control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label8;
-        
+
         /// <summary>
         /// TextBox8 control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox8;
-        
+
         /// <summary>
         /// Button1 control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace Tours_and_Travels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-        
+
         /// <summary>
         /// Button2 control.
         /// </summary>

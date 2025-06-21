@@ -62,7 +62,7 @@ namespace Tours_and_Travels
                     LinkButton8.Visible = true;
                    // LinkButton9.Visible = true;
                     LinkButton10.Visible = true;
-
+                    LinkButton4.Visible = true;
                 }
             }
             catch (Exception ex)
@@ -94,7 +94,7 @@ namespace Tours_and_Travels
 
         protected void LinkButton10_Click(object sender, EventArgs e)
         {
-            Response.Redirect("CheckBookingPackages.aspx");
+            Response.Redirect("Checkhotelbookings.aspx");
         }
 
 
@@ -131,9 +131,13 @@ namespace Tours_and_Travels
             LinkButton8.Visible = false;
             //uLinkButton9.Visible = false;
             LinkButton10.Visible = false;
+            Session.Clear();      
+            Session.Abandon();    
 
+            
+            Response.Cookies.Clear();
 
-            Response.Redirect("Home.aspx");
+            Response.Redirect("LoginPage.aspx");
         }
 
         protected void LinkButton7_Click(object sender, EventArgs e)
@@ -144,6 +148,11 @@ namespace Tours_and_Travels
         protected void LinkButton11_Click(object sender, EventArgs e)
         {
             Response.Redirect("Hotel.aspx");
+        }
+
+        protected void LinkButton4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Checkpackagebookings.aspx");
         }
     }
 }

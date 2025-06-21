@@ -87,7 +87,7 @@
                <div class="row">
                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                        <p>
-                           <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Admin Login</asp:LinkButton>
+                           <asp:LinkButton style= "padding-left:44px" class="footerlinks" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Admin Login</asp:LinkButton>
                            &nbsp;
                            <asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click" Visible="False">Packages Management</asp:LinkButton>
                            &nbsp;
@@ -97,7 +97,7 @@
                            <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server" OnClick="LinkButton10_Click" Visible="False">CheckHotel bookings</asp:LinkButton>
                           
                            &nbsp;
-                           <asp:LinkButton class="footerlinks" ID="LinkButton4" runat="server"  Visible="False">CheckPackages bookings</asp:LinkButton>
+                           <asp:LinkButton class="footerlinks" ID="LinkButton4" runat="server"  Visible="False" OnClick="LinkButton4_Click">CheckPackages bookings</asp:LinkButton>
                        </p>
 
                    </div>

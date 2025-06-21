@@ -46,6 +46,20 @@ namespace Tours_and_Travels
             }
             else
             {
+
+                DateTime selectedDate;
+                bool isValidDate = DateTime.TryParse(TextBox5.Text, out selectedDate);
+
+                if (isValidDate)
+                {
+                    if (selectedDate < DateTime.Today)
+                    {
+
+                        Response.Write("<script>alert('Please enter a date greater than today.');</script>");
+                        return;
+                    }
+                }
+
                 int length = ImageUpload.PostedFile.ContentLength;
                 byte[] pic = new byte[length];
                 ImageUpload.PostedFile.InputStream.Read(pic, 0, length);
@@ -115,15 +129,29 @@ namespace Tours_and_Travels
                 byte[] imageData = ImageUpload.FileBytes;
 
 
+                DateTime selectedDate;
+                bool isValidDate = DateTime.TryParse(TextBox5.Text, out selectedDate);
+
+                if (isValidDate)
+                {
+                    if (selectedDate < DateTime.Today)
+                    {
+
+                        Response.Write("<script>alert('Please enter a date greater than today.');</script>");
+                        return;
+                    }
+                }
+
                 con = new SqlConnection(conn);
                 con.Open();
-                SqlCommand command = new SqlCommand("UPDATE PackagesM SET Description=@Description,TravelDays=@TravelDays,Amount=@Amount,ImageData=@ImageData WHERE Id=@Id", con);
+                SqlCommand command = new SqlCommand("UPDATE PackagesM SET Description=@Description,TravelDays=@TravelDays,Amount=@Amount,ImageData=@ImageData, StartDate=@StartDate WHERE Id=@Id", con);
                    command.Parameters.AddWithValue("@Id", TextBox1.Text);
                 command.Parameters.AddWithValue("@Place", TextBox2.Text);
                     command.Parameters.AddWithValue("@Description", TextBox3.Text);
                     command.Parameters.AddWithValue("@TravelDays", TextBox4.Text);
                     command.Parameters.AddWithValue("@Amount", TextBox5.Text);
-                    command.Parameters.AddWithValue("@ImageData", imageData);
+                command.Parameters.AddWithValue("@StartDate", TextBox6.Text);
+                command.Parameters.AddWithValue("@ImageData", imageData);
                     int rowsAffected = command.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {

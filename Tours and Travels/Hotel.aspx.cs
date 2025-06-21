@@ -14,8 +14,18 @@ namespace Tours_and_Travels
     {
         string conn = ConfigurationManager.ConnectionStrings["newtat"].ConnectionString;
         SqlConnection con;
+        string UserID;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["User"] != null)
+            {
+                UserID = Session["User"].ToString();
+
+            }
+            else
+            {
+                Response.Redirect("LoginPage.aspx");
+            }
             if (!this.IsPostBack)
             {
 

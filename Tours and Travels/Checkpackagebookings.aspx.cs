@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -10,9 +10,8 @@ using System.Web.UI.WebControls;
 
 namespace Tours_and_Travels
 {
-    public partial class BookingDetail : System.Web.UI.Page
+    public partial class Checkpackagebookings : System.Web.UI.Page
     {
-        
         string conn = ConfigurationManager.ConnectionStrings["newtat"].ConnectionString;
         SqlConnection con;
         protected void Page_Load(object sender, EventArgs e)
@@ -61,13 +60,7 @@ namespace Tours_and_Travels
                     GridView1.DataBind();
 
                 }
-                if (ds.Tables[1].Rows.Count != 0)
-                {
-
-                    GridView2.DataSource = ds.Tables[1];
-                    GridView2.DataBind();
-
-                }
+               
             }
         }
     }

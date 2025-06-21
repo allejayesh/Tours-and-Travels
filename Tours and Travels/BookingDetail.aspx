@@ -25,9 +25,9 @@
                     
                  
                       <asp:BoundField DataField="Name"  HeaderText="Name" />
-                      <asp:BoundField  DataField="Depature" HeaderText="Depature" />
+                      <asp:BoundField  DataField="Depature" HeaderText="Departure" />
                       <asp:BoundField  DataField="Place" HeaderText="Place" />
-                      <asp:BoundField  DataField="fromdate" HeaderText="Days" />
+                      <asp:BoundField  DataField="fromdate" HeaderText="Days"   DataFormatString="{0:dd-MM-yyyy}" />
                       <asp:BoundField  DataField="T_Amount" HeaderText="Amount" />
                      
                     
@@ -73,7 +73,7 @@
                       <asp:BoundField DataField="Name"  HeaderText="Name" />
                      
                       <asp:BoundField  DataField="Hotel" HeaderText="Hotel" />
-                      <asp:BoundField  DataField="fromdate" HeaderText="Checkin date" />
+                      <asp:BoundField  DataField="fromdate"  DataFormatString="{0:dd-MM-yyyy}" HeaderText="Checkin date" />
                       <asp:BoundField  DataField="Amount" HeaderText="Amount" />
                      
                     

@@ -41,8 +41,12 @@
                           </ItemTemplate>
                       </asp:TemplateField>
                     
+<asp:TemplateField HeaderText="Date">
+         <ItemTemplate>
+             <asp:Label ID="lblDate" runat="server" Text='<%# Eval("StartDate", "{0:dd-MM-yyyy}") %>'></asp:Label>
+         </ItemTemplate>
                     
-                    
+                         </asp:TemplateField>
                     
                     
                       <asp:CommandField HeaderText="Select" ShowSelectButton="True" />

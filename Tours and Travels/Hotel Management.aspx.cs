@@ -156,7 +156,16 @@ namespace Tours_and_Travels
                 con = new SqlConnection(conn);
                 con.Open();
                 SqlCommand cmd = new SqlCommand("Delete from HotelM where Hotel='" + TextBox2.Text + "'", con);
-                cmd.ExecuteNonQuery();
+                //cmd.ExecuteNonQuery();
+                int rowsAffected = cmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    lblerr.Text = "Deleted successfully.";
+                }
+                else
+                {
+                    lblerr.Text = "No record was deleted.";
+                }
                 using (SqlConnection con = new SqlConnection(conn))
                 {
                     using (SqlDataAdapter sda = new SqlDataAdapter("Select * from HotelM", con))

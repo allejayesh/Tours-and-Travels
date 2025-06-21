@@ -10,8 +10,10 @@ namespace Tours_and_Travels
     public partial class ViewDetails : System.Web.UI.Page
     {
         string UserID;
+        string Startdate;
         protected void Page_Load(object sender, EventArgs e)
         {
+            string startdate;
             /* string Place = Request.QueryString["Place"];
              string Description = Request.QueryString["Descrip"];
              string Days = Request.QueryString["Days"];
@@ -33,7 +35,7 @@ namespace Tours_and_Travels
                 litDays.Text = Session["Day"].ToString();
                 litAmount.Text = Session["Amt"].ToString();
                 Image1.ImageUrl = Session["img"].ToString();
-
+                Startdate = Session["Date"].ToString();
             }
             if (Session["User"] != null)
             {
@@ -50,7 +52,7 @@ namespace Tours_and_Travels
         {
             if (Page.IsValid)
             {
-                Response.Redirect("Booking.aspx?place=" + litPlace.Text + "&Amount=" +litAmount.Text );
+                Response.Redirect("Booking.aspx?place=" + litPlace.Text + "&Amount=" +litAmount.Text+" &Date=" + Startdate);
 
             }
         }
